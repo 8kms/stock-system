@@ -1,0 +1,27 @@
+# Data caches (large binary files)
+data_cache/*.pkl
+data_cache/*.parquet
+data_cache/akshare/
+data_cache/tushare/
+data_cache/valuation/
+
+# DuckDB database
+data/stock_system.duckdb
+
+# Kronos model weights
+Kronos/
+
+# Output files
+output_files/
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+.DS_Store
