@@ -13,11 +13,27 @@ st.set_page_config(
     page_title="A 股多因子选股系统",
     page_icon=":chart:",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
+    menu_items={
+        "Get Help": None,
+        "Report a bug": None,
+        "About": "A股多因子选股辅助系统 v1.0"
+    }
 )
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import DATA_CACHE
+
+# 紧凑布局 CSS：减少空白，适合笔记本/桌面屏幕
+st.markdown("""
+<style>
+    .block-container { padding-top: 1rem; padding-bottom: 0rem; max-width: 100%; }
+    .stMetric { font-size: 0.9rem; }
+    .stDataFrame { font-size: 0.85rem; }
+    div[data-testid="stSidebarContent"] { padding-top: 0.5rem; }
+    .st-emotion-cache-1jicfl2 { padding-top: 1rem; }
+</style>
+""", unsafe_allow_html=True)
 
 
 @st.cache_resource
