@@ -1,6 +1,8 @@
 # A 股多因子选股系统
 
-本地辅助决策系统：AKShare/Sina/Tushare 拉数据 → 6 类因子计算 → LightGBM/XGBoost 排序 → Gate 0-8 质量检查 → Streamlit 可视化。
+> 部署日期：2025-05-31 | 版本：v1.0 | 60 文件 | 本地辅助决策系统
+
+AKShare/Sina/Tushare 数据 → 6 类因子 → LightGBM/XGBoost/Kronos 排序 → Gate 0-8 质量检查 → Streamlit 7 页工作台。
 
 ## 快速开始
 
